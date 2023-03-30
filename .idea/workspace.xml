@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb92c22a-73fa-42e0-a73a-ca8b2cd7146b" name="Changes" comment="Début étape 4" />
+    <list default="true" id="edcc6568-9cb6-49a2-b5fb-8d957f1289a2" name="Changes" comment="Début étape 4">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SymfonyProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SymfonyProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,6 +138,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/google-mailer" />
     </include_path>
   </component>
   <component name="ProjectId" id="2N6R5JeuUhxj8e3XwkDsK7ZquWn" />
@@ -161,13 +171,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb92c22a-73fa-42e0-a73a-ca8b2cd7146b" name="Changes" comment="" />
+      <changelist id="edcc6568-9cb6-49a2-b5fb-8d957f1289a2" name="Changes" comment="Début étape 4" />
       <created>1678982360281</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678982360281</updated>
       <workItem from="1678982362595" duration="2716000" />
       <workItem from="1678986688615" duration="128000" />
+      <workItem from="1679602602850" duration="223000" />
+      <workItem from="1680178838526" duration="8762000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1678983085963</created>
