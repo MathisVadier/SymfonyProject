@@ -1,0 +1,13 @@
+
+.category::after {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+    transform: scale(0);
+}
+
+.category:hover::after {
+    transform: scale(1);
+}

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edcc6568-9cb6-49a2-b5fb-8d957f1289a2" name="Changes" comment="Activation Mail">
+    <list default="true" id="edcc6568-9cb6-49a2-b5fb-8d957f1289a2" name="Changes" comment="Panier">
+      <change afterPath="$PROJECT_DIR$/public/assets/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/_partials/_nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_partials/_nav.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categories/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categories/list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +18,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -154,22 +163,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/symfony_projet/SymfonyProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/wamp64/www/symfony_projet/SymfonyProject",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\symfony_projet\SymfonyProject" />
@@ -189,7 +199,9 @@
       <workItem from="1680178838526" duration="8762000" />
       <workItem from="1680189854293" duration="1194000" />
       <workItem from="1680677013611" duration="649000" />
-      <workItem from="1680782099182" duration="10806000" />
+      <workItem from="1680782099182" duration="10850000" />
+      <workItem from="1681226885560" duration="148000" />
+      <workItem from="1681309127488" duration="6081000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1678983085963</created>
@@ -219,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678986731863</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Panier">
+      <created>1680796095766</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680796095766</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +261,7 @@
     <MESSAGE value="3" />
     <MESSAGE value="Début étape 4" />
     <MESSAGE value="Activation Mail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Activation Mail" />
+    <MESSAGE value="Panier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Panier" />
   </component>
 </project>
