@@ -55,7 +55,7 @@ class RegistrationController extends AbstractController
 
             // On envoie un mail
             $mail->send(
-                'no-reply@monsite.net',
+                'mathis.ecom@gmail.com',
                 $user->getEmail(),
                 'Activation de votre compte sur le site e-commerce',
                 'register',

@@ -1,0 +1,48 @@
+
+.piedpage{
+    background-color: #1a1e21;
+    height: 400px;
+}
+
+.titre-footer{
+    font-weight: bold;
+    margin-left: 30%;
+    margin-top: 20%;
+    font-size: 20px;
+    color:white;
+}
+
+.lien-footer {
+    margin-left: 30%;
+    color :#B8B8B8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.logo-footer {
+    margin-left: 30%;
+    color :#B8B8B8;
+    font-size: 40px;
+}
+
+.logo2-footer {
+    margin-left: 2%;
+    color :#B8B8B8;
+    font-size: 40px;
+}
+
+
+.lien-footer:hover {
+    color:white;
+}
+
+.logo-footer:hover {
+    color:white;
+}
+
+.logo2-footer:hover {
+    color:white;
+}
+
+
