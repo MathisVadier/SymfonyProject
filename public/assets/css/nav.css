@@ -21,6 +21,30 @@
     align-items: center;
 }
 
+.sous {
+    display:none;
+    background-color: white;
+}
+
+.navbar-collapse > ul li:hover .sous {
+    display:block;
+}
+
+.sous li {
+    float:none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom:none;
+}
+
+.sous a:hover {
+}
+
+
 .search {
     width: 20%;
     border: 1px solid black;
@@ -44,3 +68,4 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
