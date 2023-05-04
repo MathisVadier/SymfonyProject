@@ -1,4 +1,6 @@
+
 {% extends "base.html.twig" %}
+
 
 {% block title %}Détails de
     {{ product.name }}
@@ -39,7 +41,7 @@
                 <p>Catégorie : {{ product.categories.name }}</p>
                 <p>Prix : {{ product.price / 100 }} €</p>
                 {% if product.stock > 0 %}
-                    <a href="#" class="btn btn-success">Ajouter au panier</a>
+                    <a href="#" class="btn btn-success"><i class='fas fa-cart-plus'></i> Ajouter au panier</a>
                 {% else %}
                     <p class="text-danger">Temporairement en rupture de stock</p>
                 {% endif %}
