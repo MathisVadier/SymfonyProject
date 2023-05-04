@@ -1,4 +1,4 @@
-# E-commerce Symfony 6
+# E-commerce Symfony 6 :
 
 Site e-commerce créé avec Symfony 6dans une série de tutoriels présents sur la chaîne Nouvelle-Techno.fr à cette adresse : https://www.youtube.com/playlist?list=PLBq3aRiVuwyzI0MT4LhvwqkVenz5pF_DM
 

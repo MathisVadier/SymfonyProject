@@ -56,6 +56,9 @@ class Categories
 
         return $this;
     }
+    public function __toString() {
+        return $this->name;
+    }
 
     public function getCategoryOrder(): ?int
     {
@@ -140,4 +143,5 @@ class Categories
 
         return $this;
     }
+
 }
