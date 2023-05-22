@@ -19,9 +19,9 @@
         {% for element in dataPanier %}
         <tr>
             <td>{{ element.produit.name }}</td>
-            <td class="text-right">{{ element.produit.price }} €</td>
+            <td class="text-right">{{ element.produit.price / 100}} €</td>
             <td>{{ element.quantite }}</td>
-            <td class="text-right">{{ element.quantite * element.produit.price}} €</td>
+            <td class="text-right">{{ element.quantite * element.produit.price / 100}} €</td>
             <td>
                 <a href="{{ path("profile_panier", {id: element.produit.id})}}"
                    class="btn btn-success">
@@ -45,7 +45,7 @@
         <tfoot>
         <tr>
             <td colspan="3">Total</td>
-            <td class="text-end">{{ total }} €</td>
+            <td class="text-end">{{ total /100 }} €</td>
         </tr>
         </tfoot>
     </table>
