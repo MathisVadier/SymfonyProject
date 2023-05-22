@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edcc6568-9cb6-49a2-b5fb-8d957f1289a2" name="Changes" comment="page d'acceuil">
-      <change afterPath="$PROJECT_DIR$/public/assets/css/link.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/InfoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/info/cgu.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/info/cgv.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/info/chartecookies.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/info/contact.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/info/faq.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/info/mentionslegales.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_partials/_footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_partials/_footer.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_partials/_nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_partials/_nav.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -311,6 +297,7 @@
     <MESSAGE value="Panier" />
     <MESSAGE value="footer" />
     <MESSAGE value="searchbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="searchbar" />
+    <MESSAGE value="menu deroulant + affichage page home" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu deroulant + affichage page home" />
   </component>
 </project>
