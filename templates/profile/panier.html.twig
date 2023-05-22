@@ -26,14 +26,14 @@
                 <a href="{{ path("profile_panier", {id: element.produit.id})}}"
                    class="btn btn-success">
                     <i class="bi bi-cart-plus"></i>
-                </a>
+                +</a>
                 <a href="{{ path("profile_remove", {id: element.produit.id})}}"
                    class="btn btn-warning">
                     <i class="bi bi-cart-dash"></i>
-                </a>
+                -</a>
                 <a href="{{ path("profile_delete", {id: element.produit.id})}}" class="btn btn-danger">
                     <i class="bi bi-cart-x"></i>
-                </a>
+                x</a>
             </td>
         </tr>
         {% else %}
