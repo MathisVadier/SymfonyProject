@@ -15,6 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\String\Slugger\SluggerInterface;
+use App\Entity\Categorie;
 
 #[Route('/admin/categories', name: 'admin_categories_')]
 class CategoriesController extends AbstractController
@@ -22,13 +23,13 @@ class CategoriesController extends AbstractController
     #[Route('/', name: 'index')]
     public function index(CategoriesRepository $categoriesRepository): Response
     {
-        $categories = $categoriesRepository->findBy([], ['categoryOrder' => 'asc']);
 
+        $categories = $categoriesRepository->findAll();
         return $this->render('admin/categories/index.html.twig', compact('categories'));
     }
 
     #[Route('/ajout', name: 'addcat')]
-    public function add(Request $request, EntityManagerInterface $em, SluggerInterface $slugger, ): Response
+    public function add(Request $request, EntityManagerInterface $em, SluggerInterface $slugger,): Response
     {
         $this->denyAccessUnlessGranted('ROLE_ADMIN');
 
@@ -43,7 +44,7 @@ class CategoriesController extends AbstractController
         $categoryForm->handleRequest($request);
 
         //On vérifie si le formulaire est soumis ET valide
-        if($categoryForm->isSubmitted() && $categoryForm->isValid()){
+        if ($categoryForm->isSubmitted() && $categoryForm->isValid()) {
 
             // On génère le slug
             $slug = $slugger->slug($category->getName());
@@ -68,4 +69,28 @@ class CategoriesController extends AbstractController
         // ['productForm' => $productForm]
     }
 
+    #[Route('delete/{id}', name: 'delete', methods: ['POST'])]
+    public function deleteCategorie(Request $request, EntityManagerInterface $entityManager, CategoriesRepository $categoriesRepository, $id): Response
+    {
+        $categorie = $categoriesRepository->find($id);
+
+        // Vérifiez si la catégorie existe
+        if (!$categorie) {
+            throw $this->createNotFoundException(
+                'La catégorie n\'existe pas.'
+            );
+        }
+
+        $entityManager->remove($categorie);
+        $entityManager->flush();
+
+        $this->addFlash('success', 'La catégorie a été supprimée avec succès.');
+
+        return $this->redirectToRoute('admin_categories_index');
+    }
+
 }
+
+
+
+

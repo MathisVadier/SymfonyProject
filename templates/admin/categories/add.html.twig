@@ -4,10 +4,16 @@
 
 {% block body %}
     <main class="container">
-        <section class="row">
-            <div class="col-12">
-                <h1>Ajouter une catégorie</h1>
-                {% include "admin/categories/_form.html.twig" %}
+        <section class="row justify-content-center align-items-center" style="height: 80vh;">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="card shadow" style="border-radius: 30px;">
+                    <div class="card-body" style="margin-bottom: 100px">
+                        <h1 class="card-title text-center mb-4">Ajouter une catégorie</h1>
+                        {% include "admin/categories/_form.html.twig" with {
+                            form_attr: {'class': 'd-flex justify-content-center mt-4'}
+                        } %}
+                    </div>
+                </div>
             </div>
         </section>
     </main>
