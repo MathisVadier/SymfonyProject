@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/link.css')}}">
+{% endblock %}
+{% block body%}
+    <h1>FAQ</h1>
+    <div class="allquest">
+    <p class="question">
+        Comment puis-je passer une commande ?
+    </p>
+    <p>
+        Pour passer une commande, il vous suffit de naviguer sur notre site Web, de trouver les articles que vous souhaitez acheter, de
+        les ajouter à votre panier, puis de finaliser votre commande en remplissant les informations de livraison et de paiement.
+    </p>
+    <p class="question">
+        Quels sont les modes de paiement acceptés ?
+    </p>
+    <p>
+        Nous acceptons les paiements par carte de crédit (Visa, Mastercard), PayPal et Apple Pay.
+    </p>
+    <p class="question">
+        Comment puis-je savoir si un article est en stock ?
+    </p>
+    <p>
+        Les articles en stock seront affichés sur la page produit avec un indicateur "En stock". Si un article est en rupture de stock,
+        vous pouvez vous inscrire à notre liste d'attente pour être informé(e) lorsque l'article sera de nouveau disponible.
+    </p>
+    <p class="question">
+        Combien de temps prend la livraison ?
+    </p>
+    <p>
+        Le délai de livraison dépend de votre emplacement et du mode de livraison choisi. Nous offrons la livraison
+        standard (3-5 jours ouvrables) et la livraison express (1-2 jours ouvrables) pour la plupart de nos produits. Vous pouvez vérifier
+        les délais de livraison exacts lors de la finalisation de votre commande.
+    </p>
+    <p class="question">
+        Que se passe-t-il si je ne suis pas satisfait(e) de ma commande ?
+    </p>
+    <p>
+        Nous sommes désolés d'apprendre que vous n'êtes pas satisfait(e) de votre commande. Si vous souhaitez retourner un article,
+        veuillez consulter notre politique de retour sur notre site Web pour connaître les détails et les instructions.
+    </p>
+    <p class="question">
+        Puis-je annuler ou modifier ma commande une fois qu'elle a été passée ?
+    </p>
+    <p>
+        Si vous souhaitez annuler ou modifier votre commande, veuillez nous contacter dès que possible. Nous ferons de notre mieux
+        pour répondre à votre demande, mais si la commande a déjà été traitée ou expédiée, il peut être trop tard pour l'annuler ou la modifier.
+    </p>
+    <p class="finale">
+        Si vous avez d'autres questions ou préoccupations, n'hésitez pas à nous <a href="{{ path('contact') }}">contacter</a>.
+        Nous sommes là pour vous aider !
+    </p>
+    </div>
+
+{% endblock %}

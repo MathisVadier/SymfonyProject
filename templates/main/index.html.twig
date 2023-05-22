@@ -4,10 +4,14 @@
     <main class="container">
         <section class="row">
             <div class="col-12">
-                <h1>Site e-commerce</h1>
-                <p>Bienvenue dans notre boutique</p>            
+                <div class="presentation">
+                <h1 class="slogan">VENEZ GLOW UP AVEC HOODZCLOTHES</h1>
+                <h2 class="description">Booste ton style avec notre selection de vêtements et accessoires</h2>
+                <a class="ex" href="#prod">Explorer</a>
+                </div>
             </div>
-            {% for category in categories %}
+            <p id="prod" class="prod">Tout les produits</p>
+            {#{% for category in categories %}
                 {% if category.parent == null %}
                     <div class="col-12">
                         <h2>{{ category.name }}</h2>
@@ -20,8 +24,20 @@
                                 <a href="{{ path('categories_list', {slug: category.slug}) }}" class="btn btn-primary">Voir les produits</a>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 {% endif %}
+            {% endfor %}#}
+            {% for unProduit in produits %}
+                <div class="col-3 mb-3">
+                    <article class="card h-100">
+                        <img src="{{ asset('assets/uploads/products/mini/300x300-' ~ unProduit.images[0].name ) }}" class="card-img-top" alt="{{ unProduit.name }}">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ unProduit.name }}</h2>
+                            <p class="card-text">{{ unProduit.price / 100 }} €</p>
+                            <a href="{{ path('products_details', {"slug": unProduit.slug }) }}" class="btn btn-primary">Voir les détails</a>
+                        </div>
+                    </article>
+                </div>
             {% endfor %}
         </section>
     </main>

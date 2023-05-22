@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/link.css')}}">
+{% endblock %}
+{% block body%}
+    <h1>Charte des Cookies</h1>
+    <div class="allquest">
+        <p>
+            Cette charte des cookies explique comment HoodzClothes utilise les cookies sur son site. En utilisant notre site,
+            vous acceptez l'utilisation des cookies conformément à cette charte. Nous vous recommandons de la lire attentivement.
+        </p>
+        <br>
+        <br>
+        <br>
+        <p>
+            1- <strong>Qu'est-ce qu'un cookie ?</strong><br><br>
+            Un cookie est un petit fichier texte stocké sur votre ordinateur ou votre appareil mobile lorsque vous visitez un site web. Il permet
+            au site de reconnaître votre appareil et de mémoriser certaines informations sur vos préférences ou vos actions passées.
+        </p>
+        <p>
+            2- <strong>Quels types de cookies utilisons-nous ?</strong><br>
+            <br>a. Cookies nécessaires : Ces cookies sont essentiels au fonctionnement du site et vous permettent de naviguer et d'utiliser ses fonctionnalités, telles que l'accès aux zones sécurisées du site et la gestion du panier d'achat.
+            <br>b. Cookies de performance : Ces cookies collectent des informations sur la manière dont vous utilisez notre site, par exemple les pages que vous consultez le plus souvent ou les erreurs rencontrées. Ces données nous aident à améliorer le fonctionnement du site et à optimiser votre expérience utilisateur.
+            <br>c. Cookies de fonctionnalité : Ces cookies permettent au site de se souvenir de vos choix et de personnaliser votre expérience, par exemple en mémorisant votre langue préférée ou en vous proposant des fonctionnalités interactives.
+            <br>d. Cookies publicitaires : Ces cookies sont utilisés pour diffuser des publicités ciblées en fonction de vos intérêts. Ils peuvent également être utilisés pour limiter le nombre de fois où vous voyez une publicité et mesurer l'efficacité des campagnes publicitaires.
+            <br>e. Cookies de réseaux sociaux : Ces cookies sont utilisés pour vous permettre de partager du contenu du site sur les réseaux sociaux et interagir avec leur contenu. Ils peuvent également suivre votre activité de navigation sur d'autres sites web.
+        </p>
+        <p>
+            3- <strong>Comment contrôler les cookies ?</strong><br><br>
+            Vous pouvez contrôler et gérer les cookies à tout moment en modifiant les paramètres de votre navigateur. La plupart des navigateurs vous
+            permettent de refuser tous les cookies ou de les supprimer individuellement. Cependant, veuillez noter que le blocage ou la suppression
+            des cookies peut affecter certaines fonctionnalités de notre site et limiter votre expérience utilisateur.
+        </p>
+        <p>
+            4-<strong>Cookies tiers</strong><br><br>
+            Nous pouvons utiliser des cookies tiers sur notre site, notamment pour analyser l'utilisation du site et diffuser des publicités ciblées.
+            Les cookies tiers sont soumis aux politiques de confidentialité et aux chartes des cookies de ces tiers. Nous n'avons pas le contrôle
+            sur les cookies tiers et nous vous recommandons de consulter leurs politiques de confidentialité pour plus d'informations.
+        </p>
+        <p>
+            5- <strong>Mises à jour de la charte des cookies</strong><br><br>
+            Nous nous réservons le droit de mettre à jour cette charte des cookies à tout moment. Les modifications seront publiées sur cette
+            page avec la date de la dernière mise à jour. Nous vous recommandons de consulter régulièrement cette page pour vous tenir informé
+            des éventuelles modifications.
+        </p>
+        <p>
+            Si vous avez des questions ou des préoccupations concernant notre utilisation des cookies, veuillez nous <a href="{{ path('contact') }}">contacter</a>.
+        </p>
+        <p>
+            Date de la dernière mise à jour : 18 mai 2023
+        </p>
+    </div>
+{% endblock %}

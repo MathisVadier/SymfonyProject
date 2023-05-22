@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/link.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+{% block body%}
+    <h1>Contact</h1>
+    <div class="infocontact">
+        <div class="num">
+            <h2><i class="fa fa-phone" style="font-size:100px"></i></h2>
+            <br>
+            <h2>05 05 05 05 05</h2>
+        </div>
+        <div class="mail">
+            <h2><i class="fa fa-envelope-open" style="font-size:100px"></i></h2>
+           <br>
+            <h2>hoodzclothes@gmail.com</h2>
+        </div>
+    </div>
+{% endblock %}

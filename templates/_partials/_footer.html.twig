@@ -1,25 +1,32 @@
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="{{ asset('assets/css/footer.css')}}">
+
 
 <footer class="piedpage">
 	<div class="row">
 		<section class="col centre">
 			<h1 class="titre-footer">A propos de nous</h1>
 			<br>
-			<a class="lien-footer" href="#">FAQ</a><br>
-			<a class="lien-footer" href="#">Contact</a><br>
+			<a class="lien-footer" href="{{ path('faq') }}">FAQ</a><br>
+			<a class="lien-footer" href="{{ path('contact') }}">Contact</a><br>
 
 		</section>
 		<section class="col">
 			<h1 class="titre-footer">Informations légales</h1>
 			<br>
-			<a class="lien-footer" href="#">CGU</a><br>
-			<a class="lien-footer" href="#">CGV</a><br>
-			<a class="lien-footer" href="#">Mentions Légales</a><br>
-			<a class="lien-footer" href="#">Charte Cookies</a><br>
+			<a class="lien-footer" href="{{ path('cgu') }}">CGU</a><br>
+			<a class="lien-footer" href="{{ path('cgv') }}">CGV</a><br>
+			<a class="lien-footer" href="{{ path('mentionslegales') }}">Mentions Légales</a><br>
+			<a class="lien-footer" href="{{ path('chartecookies') }}">Charte Cookies</a><br>
 		</section>
 		<section class="col">
 			<h1 class="titre-footer">Paiements acceptés</h1>
+			<br>
+			<a class="logo-footer"><i class='fa fa-cc-mastercard'></i></a>
+			<a class="logo2-footer"><i class='fa fa-cc-paypal'></i></a>
+			<a class="logo2-footer"><i class='fa fa-cc-visa'></i></a>
+			<a class="logo2-footer"><i class='fab fa-cc-apple-pay'></i></a>
 			<br>
 
 		</section>
