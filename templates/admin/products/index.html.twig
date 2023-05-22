@@ -30,6 +30,11 @@
                                 <td>{{ produit.stock }}</td>
                                 <td>{{ produit.categories.name }}</td>
                                 <td>
+                                    <form action="{{ path('admin_products_delete', {id: produit.id}) }}" method="POST">
+                                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                                    </form>
+                                </td>
+                                <td>
                                     <a href="{{ path('admin_products_edit', {id: produit.id})}}" class="btn btn-success">Modifier</a>
                                 </td>
                             </tr>

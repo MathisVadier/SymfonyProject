@@ -5,6 +5,7 @@ namespace App\Controller\Admin;
 use App\Entity\Images;
 use App\Entity\Products;
 use App\Form\ProductsFormType;
+use App\Repository\CategoriesRepository;
 use App\Repository\ProductsRepository;
 use App\Service\PictureService;
 use Doctrine\ORM\EntityManagerInterface;
@@ -145,13 +146,13 @@ class ProductsController extends AbstractController
         // ['productForm' => $productForm]
     }
 
-    #[Route('/suppression/{id}', name: 'delete')]
+    #[Route('/suppression/{id}', name: 'delete2')]
     public function delete(Products $product): Response
     {
         // On vérifie si l'utilisateur peut supprimer avec le Voter
         $this->denyAccessUnlessGranted('PRODUCT_DELETE', $product);
 
-        return $this->render('admin/products/index.html.twig');
+        return $this->redirectToRoute('admin_products_index');
     }
 
     #[Route('/suppression/image/{id}', name: 'delete_image', methods: ['DELETE'])]
@@ -178,5 +179,26 @@ class ProductsController extends AbstractController
 
         return new JsonResponse(['error' => 'Token invalide'], 400);
     }
+
+    #[Route('delete/{id}', name: 'delete', methods: ['POST'])]
+    public function deleteProduit(Request $request, EntityManagerInterface $entityManager, ProductsRepository $productsRepository, $id): Response
+    {
+        $products = $productsRepository->find($id);
+
+        // Vérifiez si le  produit existe
+        if (!$products) {
+            throw $this->createNotFoundException(
+                'Le produit n\'existe pas.'
+            );
+        }
+
+        $entityManager->remove($products);
+        $entityManager->flush();
+
+        $this->addFlash('success', 'Le produit a été supprimé avec succès.');
+
+        return $this->redirectToRoute('admin_products_index');
+    }
+
 
 }

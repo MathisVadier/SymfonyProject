@@ -1,7 +1,23 @@
-{{ form_start(categoryForm) }}
-    {{ form_row(categoryForm.parent) }}
-    {{ form_row(categoryForm.name) }}
-    {{ form_row(categoryForm.slug) }}
+{{ form_start(categoryForm, {'attr': {'class': 'form'}}) }}
 
-<button type="submit" class="btn-primary">{{ button_label|default('Ajouter') }} </button>
+<div class="form-group">
+    {{ form_label(categoryForm.name, 'Nom de la catégorie', {'label_attr': {'class': 'form-label'}}) }}
+    {{ form_widget(categoryForm.name, {'attr': {'class': 'form-control form-control-sm', 'placeholder': 'Nom de la catégorie'}, 'label_attr': {'class': 'form-label'}}) }}
+</div>
+
+<div class="form-group">
+    {{ form_label(categoryForm.parent, 'Catégorie parente', {'label_attr': {'class': 'form-label'}}) }}
+    {{ form_widget(categoryForm.parent, {'attr': {'class': 'form-control form-control-sm'}, 'label_attr': {'class': 'form-label'}}) }}
+</div>
+
+<div class="form-group">
+    {{ form_label(categoryForm.slug, 'Slug', {'label_attr': {'class': 'form-label'}}) }}
+    {{ form_widget(categoryForm.slug, {'attr': {'class': 'form-control form-control-sm', 'placeholder': 'Slug'}, 'label_attr': {'class': 'form-label'}}) }}
+</div>
+
+<div class="text-center">
+    <button type="submit" class="btn btn-primary" style="position: absolute; margin-top: 120px; margin-left: -55px">{{ button_label|default('Ajouter') }}</button>
+</div>
+{{ form_row(categoryForm._token) }}
 {{ form_end(categoryForm) }}
+

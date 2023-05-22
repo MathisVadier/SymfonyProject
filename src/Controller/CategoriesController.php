@@ -27,5 +27,7 @@ class CategoriesController extends AbstractController
         //     'category' => $category,
         //     'products' => $products
         // ]);
+        return $this->renderForm('admin/categories/_form.html.twig', compact('category', 'products'));
     }
+
 }

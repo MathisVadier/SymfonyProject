@@ -10,28 +10,34 @@
                 <h1>Liste des catégories</h1>
                 <table class="table">
                     <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nom</th>
-                            <th>Parent</th>
-                            <th>Slug</th>
-                            <th>Ordre</th>
-                        </tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Parent</th>
+                        <th>Slug</th>
+                        <th>Ordre</th>
+                        <th>Actions</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        {% for categorie in categories %}
-                            <tr>
-                                <td>{{ categorie.id }}</td>
-                                <td>{{ categorie.name }}</td>
-                                <td>
-                                    {% if categorie.parent is not null %}
-                                        {{ categorie.parent.name }}
-                                    {% endif %}
-                                </td>
-                                <td>{{ categorie.slug }}</td>
-                                <td>{{ categorie.categoryOrder }}</td>
-                            </tr>
-                        {% endfor %}
+                    {% for categorie in categories %}
+                        <tr>
+                            <td>{{ categorie.id }}</td>
+                            <td>{{ categorie.name }}</td>
+                            <td>
+                                {% if categorie.parent is not null %}
+                                    {{ categorie.parent.name }}
+                                {% endif %}
+                            </td>
+                            <td>{{ categorie.slug }}</td>
+                            <td>{{ categorie.categoryOrder }}</td>
+                            <td>
+                                <form action="{{ path('admin_categories_delete', {id: categorie.id}) }}" method="POST">
+                                    <button type="submit" class="btn btn-danger">Supprimer</button>
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
             </main>
